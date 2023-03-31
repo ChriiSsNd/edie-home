@@ -1,0 +1,9 @@
+@forward '../utils/variables';
+
+html {
+    font-size: $size-14;
+}
+
+a {
+    text-decoration: none;
+}

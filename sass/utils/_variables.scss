@@ -1,0 +1,21 @@
+@forward '../utils/functions';
+@forward 'colors';
+@forward 'fonts';
+
+$fs-48: converterPxEm(48);
+$fs-36: converterPxEm(36);
+$fs-24: converterPxEm(24);
+$fs-18: converterPxEm(18);
+$fs-16: converterPxEm(16);
+$fs-14: converterPxEm(14);
+
+$fw-800: 800;
+$fw-500: 500;
+$fw-400: 400;
+$fw-300: 300;
+
+$bp-mobile: 320px;
+$bp-tablet: 768px;
+$bp-laptop: 992px;
+$bp-lg-laptop: 1024px;
+$bp-desktop: 1440px;
