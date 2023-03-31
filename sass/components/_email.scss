@@ -1,0 +1,51 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as m;
+
+.email {
+    margin-top: 42px;
+
+    .email__input {
+        border: 1px solid var.$clr-whitish;
+        background-color: var.$clr-whitish;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        overflow: hidden;
+    }
+    p {
+        font-size: var.$fs-14;
+        font-weight: var.$fw-500;
+        margin-top: 0;
+    }
+    input[type="email"] {
+        border: none;
+        background-color: var.$clr-whitish;
+        color: var.$clr-black-gray;
+        font-size: var.$fs-18;
+        padding: 15px 0 15px 10px;
+        width: 100%
+    }
+    input[type="submit"] {
+        @include m.btn(12px, var.$clr-blue, var.$clr-white);
+        margin-block: 1px;
+        border: none;
+        font-size: var.$fs-18;
+        font-weight: var.$fw-500;
+        padding: 15px 25px;
+        cursor: pointer;
+    }
+}
+
+input[type="email"] {
+
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        color: var.$clr-grayish;
+        font-family: var.$poppins;
+        font-size: var.$fs-18;
+        font-weight: var.$fw-500;
+    }
+}

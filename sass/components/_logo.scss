@@ -1,0 +1,7 @@
+@use '../utils/variables' as var;
+
+.logo {
+    font-family: var.$heebo;
+    font-size: var.$fs-36;
+    font-weight: var.$fw-800;
+}
