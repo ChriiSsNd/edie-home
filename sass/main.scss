@@ -1,0 +1,9 @@
+@use 'base/' as *;
+@use 'utils/' as *;
+@use 'layouts/' as *;
+@use 'components/' as *;
+
+.wrapper {
+    width: calc(100vw - 52px * 2);
+    margin: auto;
+}

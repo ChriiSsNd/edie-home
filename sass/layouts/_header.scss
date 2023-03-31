@@ -1,0 +1,32 @@
+@use '../utils/variables' as var;
+
+.heading {
+    max-width: 543px;
+    margin-left: calc(277px - 54px);
+
+    p {
+        font-size: var.$fs-18;
+        font-weight: var.$fw-500;
+        color: var.$clr-blue;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    .hero-image {
+        border-radius: 18px;
+    }
+}
+
+.heading-str {
+    max-width: 366px;
+    margin-left: calc(277px - 54px);
+
+    p {
+        font-size: var.$fs-18;
+    }
+}
