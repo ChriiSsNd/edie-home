@@ -1,7 +1,24 @@
-@forward '../utils/variables';
+@use '../utils/variables' as var;
 
 html {
-    font-size: $size-14;
+    font-family: var.$poppins;
+    font-size: var.$fs-16;
+    font-weight: var.$fw-400;
+    color: var.$clr-black-gray;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var.$clr-black;
+    font-weight: var.$fw-500;
+    line-height: 1.4;
+}
+
+
+h1 {
+    font-size: var.$fs-48;
 }
 
 a {

@@ -1,0 +1,5 @@
+@mixin btn ($radius, $bg-color, $color) {
+    border-radius: $radius;
+    background-color: $bg-color;
+    color: $color;
+}
