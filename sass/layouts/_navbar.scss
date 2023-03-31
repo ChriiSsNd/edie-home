@@ -7,12 +7,12 @@
 
     a {
         color: var.$clr-black;
+        font-size: var.$fs-24;
+        font-weight: var.$fw-500;
     }
-
+    
     nav {
         display: flex;
         gap: 50px;
-        font-size: var.$fs-24;
-        font-weight: var.$fw-500;
     }
 }
