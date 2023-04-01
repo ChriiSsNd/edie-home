@@ -1,0 +1,74 @@
+@use '../utils/variables' as var;
+@use '../utils/helpers' as *;
+
+.services {
+    margin: auto {
+        top: 200px;
+    };
+
+    h2 {
+        max-width: 346px;
+    }
+}
+
+.services__flow {
+    display: flex;
+    gap: 30px;
+    margin-top: 42px;   
+}
+
+.card {
+    padding: 46px 34px;
+
+    h3 {
+        font-weight: var.$fw-700;
+    }
+
+    p {
+        margin: {
+            top: 24px;
+            bottom: 30px;
+        };
+    }
+}
+
+button {
+    @extend %btn;
+    background-color: var.$clr-white-gray;
+    color: var.$clr-gray;
+}
+
+.card__icon {
+    width: 67px;
+    height: 67px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+
+    i {
+        color: var.$clr-white;
+    }
+}
+
+.icon--bg-bleu{
+   background-color: var.$clr-blue; 
+}
+
+.icon--bg-green{
+    background-color: var.$clr-green;
+}
+
+.icon--bg-red{
+    background-color: var.$clr-red;
+}
+
+.card--bg {
+    background-color: var.$clr-white;
+    border-radius: 24px;
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+.btn--bg {
+    background-color: var.$clr-blue;
+    color: var.$clr-white;
+}

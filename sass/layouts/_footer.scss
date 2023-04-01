@@ -1,0 +1,52 @@
+@use '../utils/mixins' as m;
+@use '../utils/variables' as var;
+
+footer {
+    background-color: var.$clr-dark-blue;
+    color: var.$clr-whitish;
+    margin-top: 233px;
+    padding-block: 46px 24px;
+
+    &>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        @include m.block-center(165px, 0px);
+    }
+
+    a {
+        font-size: var.$fs-18;
+        color: var.$clr-white;
+    }
+
+    .email {
+        margin-top: 0;
+    }
+
+    &>p {
+        margin-top: 118px;
+        text-align: center;
+
+        a {
+            font-weight: var.$fw-700;
+        }
+    }
+}
+
+.bottom-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social {
+    p {
+        margin: 0;
+    }
+}
+
+.social__icon {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}

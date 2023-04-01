@@ -1,0 +1,47 @@
+@use '../utils/variables' as var;
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.team__resume {
+    max-width: 280px;
+
+    p:first-child {
+        font-size: var.$fs-18;
+        font-weight: var.$fw-500;
+        color: var.$clr-red;
+    }
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.team__photos {
+    margin-top: 219px;
+    display: grid;
+    grid-template-areas: 
+    "ph3 ph1"
+    "ph3 ph2";
+    gap: 24px;
+
+    img {
+        border-radius: 24px;
+    }
+}
+
+.ph1 {
+    grid-area: ph1;
+}
+
+.ph2 {
+    grid-area: ph2;
+}
+
+.ph3 {
+    grid-area: ph3;
+    align-self: center;
+}

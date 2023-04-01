@@ -1,0 +1,46 @@
+@use '../utils/variables'as var;
+
+.design {
+    margin-top: 249px;
+
+    h2 {
+        max-width: 448px;
+    }
+    a {
+        font-size: var.$fs-24;
+        font-weight: var.$fw-500;
+        color: var.$clr-blue;
+    
+        i {
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+    }
+}
+
+.design__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 800px);
+    column-gap: 20px;
+
+    img {
+        border-radius: 24px;
+    }
+    div:nth-child(odd){
+        align-self: end;
+    }
+}
+
+.design--type {
+    font-size: var.$fs-14;
+    font-weight: var.$fw-300;
+    color: var.$clr-gray;
+}
+
+.design--name {
+    font-size: var.$fs-24;
+    font-weight: var.$fw-500;
+    color: var.$clr-black;
+    margin-top: 0;
+}
