@@ -448,12 +448,16 @@ input[type=email]::placeholder {
 }
 
 .wrapper {
-  width: calc(100vw - 104px);
+  width: calc(100vw - 108px);
+  margin: auto;
+}
+
+main {
+  width: calc(100% - 222px);
   margin: auto;
 }
 
 .offer-services {
-  width: calc(100% - 222px);
   margin: auto;
   margin-top: 200px;
 }
@@ -520,6 +524,54 @@ button {
 .btn--bg {
   background-color: #2D9CDB;
   color: #FFFFFF;
+}
+
+.design {
+  margin-top: 249px;
+}
+.design h2 {
+  max-width: 448px;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 800px);
+  column-gap: 20px;
+}
+.design-grid img {
+  border-radius: 24px;
+}
+.design-grid div:nth-child(odd) {
+  align-self: end;
+}
+.design-grid div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+}
+.design-grid div:nth-child(4) a {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #2D9CDB;
+  margin-top: 100px;
+  align-self: end;
+}
+.design-grid div:nth-child(4) a i {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.design__type {
+  font-size: 0.875em;
+  font-weight: 300;
+  color: #828282;
+}
+
+.design__name {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
