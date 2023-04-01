@@ -1,5 +1,8 @@
 @use "sass:math";
 
+/// Convert pixels to em/rem
+/// @param {Number} $size - Number to convert
+/// @return {String} - size in em/rem 
 @function converterPxEm($size: 18px) {
     @return strip-unit($size) * 0.0625em;
 }
