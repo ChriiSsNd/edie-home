@@ -532,6 +532,17 @@ button {
 .design h2 {
   max-width: 448px;
 }
+.design a {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #2D9CDB;
+  margin-top: 105px;
+  align-self: end;
+}
+.design a i {
+  vertical-align: middle;
+  margin-left: 10px;
+}
 
 .design-grid {
   display: grid;
@@ -544,21 +555,6 @@ button {
 }
 .design-grid div:nth-child(odd) {
   align-self: end;
-}
-.design-grid div:nth-child(4) {
-  display: flex;
-  flex-direction: column;
-}
-.design-grid div:nth-child(4) a {
-  font-size: 1.5em;
-  font-weight: 500;
-  color: #2D9CDB;
-  margin-top: 105px;
-  align-self: end;
-}
-.design-grid div:nth-child(4) a i {
-  vertical-align: middle;
-  margin-left: 10px;
 }
 
 .design__type {
@@ -578,6 +574,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .team__resume {
@@ -613,6 +610,85 @@ button {
 .ph3 {
   grid-area: ph3;
   align-self: center;
+}
+
+.comment {
+  max-width: 937px;
+}
+.comment blockquote {
+  font-size: 2.25em;
+  font-weight: 500;
+  margin-left: 0;
+  margin-top: 196px;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profil img {
+  width: 82px;
+  height: 82px;
+  border-radius: 12px;
+}
+
+.profil__name {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.profil__role {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #828282;
+}
+
+footer {
+  margin-top: 233px;
+  background-color: #100E1D;
+  color: #F2F2F2;
+  padding-block: 46px 24px;
+}
+footer > div {
+  width: calc(100% - 330px);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+footer a {
+  font-size: 1.125em;
+  color: #FFFFFF;
+}
+footer .email {
+  margin-top: 0;
+}
+footer p {
+  margin-top: 118px;
+  text-align: center;
+}
+footer p a {
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact__social {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

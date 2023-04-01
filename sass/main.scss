@@ -96,6 +96,18 @@ button {
     h2 {
         max-width: 448px;
     }
+    a {
+        font-size: $fs-24;
+        font-weight: $fw-500;
+        color: $clr-blue;
+        margin-top: 105px;
+        align-self: end;
+    
+        i {
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+    }
 }
 
 .design-grid {
@@ -109,23 +121,6 @@ button {
     }
     div:nth-child(odd){
         align-self: end;
-    }
-    div:nth-child(4){
-        display: flex;
-        flex-direction: column;
-
-        a {
-            font-size: $fs-24;
-            font-weight: $fw-500;
-            color: $clr-blue;
-            margin-top: 105px;
-            align-self: end;
-        
-            i {
-                vertical-align: middle;
-                margin-left: 10px;
-            }
-        }
     }
 }
 
@@ -146,6 +141,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .team__resume {
@@ -185,4 +181,91 @@ button {
 .ph3 {
     grid-area: ph3;
     align-self: center;
+}
+
+.comment {
+    max-width: 937px;
+
+    blockquote {
+        font-size: $fs-36;
+        font-weight: $fw-500;
+        margin-left: 0;
+        margin-top: 196px;
+    }
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        width: 82px;
+        height: 82px;
+        border-radius: 12px;
+    }
+}
+
+.profil__name {
+    font-size: $fs-24;
+    font-weight: 500;
+    margin: 0;
+}
+
+.profil__role {
+    margin: 0;
+    margin-top: 10px;
+    font-size: $fs-18;
+    font-weight: 500;
+    color: $clr-gray;
+}
+
+footer {
+    margin-top: 233px;
+    background-color: $clr-dark-blue;
+    color: $clr-whitish;
+    padding-block: 46px 24px;
+
+    &>div {
+        width: calc(100% - 165px * 2);
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    a {
+        font-size: $fs-18;
+        color: $clr-white;
+    }
+
+    .email {
+        margin-top: 0;
+    }
+
+    p {
+        margin-top: 118px;
+        text-align: center;
+
+        a {
+            font-weight: $fw-700;
+        }
+    }
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact {
+    p {
+        margin: 0;
+    }
+}
+.contact__social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
