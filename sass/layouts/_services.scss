@@ -38,18 +38,6 @@ button {
     color: var.$clr-gray;
 }
 
-.card__icon {
-    width: 67px;
-    height: 67px;
-    border-radius: 16px;
-    display: grid;
-    place-items: center;
-
-    i {
-        color: var.$clr-white;
-    }
-}
-
 .icon--bg-bleu{
    background-color: var.$clr-blue; 
 }

@@ -1,11 +1,11 @@
 @use '../utils/variables' as var;
+@use '../utils/helpers' as *;
 
 .heading {
     max-width: 543px;
-    margin-left: calc(277px - 54px);
+    @extend %heading;
 
     p {
-        font-size: var.$fs-18;
         font-weight: var.$fw-500;
         color: var.$clr-blue;
     }
@@ -24,9 +24,5 @@ header {
 
 .heading-str {
     max-width: 366px;
-    margin-left: calc(277px - 54px);
-
-    p {
-        font-size: var.$fs-18;
-    }
+    @extend %heading;
 }

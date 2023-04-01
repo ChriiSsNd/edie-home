@@ -4,15 +4,6 @@
 .email {
     margin-top: 42px;
 
-    .email__input {
-        border: 1px solid var.$clr-whitish;
-        background-color: var.$clr-whitish;
-        border-radius: 12px;
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        overflow: hidden;
-    }
     p {
         font-size: var.$fs-14;
         font-weight: var.$fw-500;
@@ -24,7 +15,17 @@
         color: var.$clr-black-gray;
         font-size: var.$fs-18;
         padding: 15px 0 15px 10px;
-        width: 100%
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: var.$clr-grayish;
+            font-family: var.$poppins;
+            font-size: var.$fs-18;
+            font-weight: var.$fw-500;
+        }
     }
     input[type="submit"] {
         @include m.btn(12px, var.$clr-blue, var.$clr-white);
@@ -37,15 +38,12 @@
     }
 }
 
-input[type="email"] {
-
-    &:focus {
-        outline: none;
-    }
-    &::placeholder {
-        color: var.$clr-grayish;
-        font-family: var.$poppins;
-        font-size: var.$fs-18;
-        font-weight: var.$fw-500;
-    }
+.email__input {
+    border: 1px solid var.$clr-whitish;
+    background-color: var.$clr-whitish;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
 }

@@ -1,6 +1,6 @@
 @forward 'colors';
 @forward 'fonts';
-@forward 'functions';
+@forward 'variables';
 @forward 'helpers';
 @forward 'mixins';
-@forward 'variables';
+@forward 'functions' hide converterPxEm, strip-unit;

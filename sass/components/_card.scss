@@ -1,0 +1,13 @@
+@use '../utils/variables' as var;
+
+.card__icon {
+    width: 67px;
+    height: 67px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+
+    i {
+        color: var.$clr-white;
+    }
+}
