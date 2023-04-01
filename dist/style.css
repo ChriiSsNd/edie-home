@@ -553,7 +553,7 @@ button {
   font-size: 1.5em;
   font-weight: 500;
   color: #2D9CDB;
-  margin-top: 100px;
+  margin-top: 105px;
   align-self: end;
 }
 .design-grid div:nth-child(4) a i {
@@ -572,6 +572,47 @@ button {
   font-weight: 500;
   color: #333333;
   margin-top: 0;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team__resume {
+  max-width: 280px;
+}
+.team__resume p:first-child {
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #EB5757;
+}
+.team__resume h2 {
+  margin-top: 0;
+}
+
+.team__photos {
+  margin-top: 219px;
+  display: grid;
+  grid-template-areas: "ph3 ph1" "ph3 ph2";
+  gap: 24px;
+}
+.team__photos img {
+  border-radius: 24px;
+}
+
+.ph1 {
+  grid-area: ph1;
+}
+
+.ph2 {
+  grid-area: ph2;
+}
+
+.ph3 {
+  grid-area: ph3;
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

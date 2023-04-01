@@ -118,7 +118,7 @@ button {
             font-size: $fs-24;
             font-weight: $fw-500;
             color: $clr-blue;
-            margin-top: 100px;
+            margin-top: 105px;
             align-self: end;
         
             i {
@@ -140,4 +140,49 @@ button {
     font-weight: $fw-500;
     color: $clr-black;
     margin-top: 0;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team__resume {
+    max-width: 280px;
+
+    p:first-child {
+        font-size: $fs-18;
+        font-weight: $fw-500;
+        color: $clr-red;
+    }
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.team__photos {
+    margin-top: 219px;
+    display: grid;
+    grid-template-areas: 
+    "ph3 ph1"
+    "ph3 ph2";
+    gap: 24px;
+
+    img {
+        border-radius: 24px;
+    }
+}
+
+.ph1 {
+    grid-area: ph1;
+}
+
+.ph2 {
+    grid-area: ph2;
+}
+
+.ph3 {
+    grid-area: ph3;
+    align-self: center;
 }
