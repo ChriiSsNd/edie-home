@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://edie-home.surge.sh">
+    <a href="edies-services.surge.sh">
       Demo
     </a>
     <span> | </span>
