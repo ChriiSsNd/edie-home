@@ -24,7 +24,7 @@ footer {
     }
 
     &>p {
-        margin-top: 118px;
+        margin-block: 118px 0;
         text-align: center;
 
         a {
@@ -49,4 +49,30 @@ footer {
     display: flex;
     gap: 10px;
     margin-top: 10px;
+}
+
+@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-laptop}) {
+    
+    footer {
+        margin-top: 103px;
+    
+        &>div {
+            display: block;
+            @include m.block-center(41px, 0px);
+        }
+
+        .social {
+            p {
+                margin-top: 64px;
+            }
+        }
+    
+        .email {
+            margin-top: 65px;
+        }
+    
+        &>p {
+            margin-top: 154px;
+        }
+    }
 }

@@ -47,3 +47,12 @@
     gap: 10px;
     overflow: hidden;
 }
+
+@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-laptop}) {
+
+    .email {
+        p {
+            font-size: var.$fs-10;
+        }
+    }
+}

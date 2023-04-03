@@ -60,3 +60,36 @@ button {
     background-color: var.$clr-blue;
     color: var.$clr-white;
 }
+
+@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-laptop}) {
+    
+    .services {
+        margin-top: 102px;
+
+        h2 {
+            max-width: 259px;
+            font-size: var.$fs-24;
+        }
+    }
+
+    .services__flow {
+        flex-direction: column;
+        gap: 62px;
+        margin-top: 46px;   
+    }
+
+    .card {
+        padding: 46px 34px;
+
+        h3 {
+            font-weight: var.$fw-700;
+        }
+
+        p {
+            margin: {
+                top: 24px;
+                bottom: 30px;
+            };
+        }
+    }
+}

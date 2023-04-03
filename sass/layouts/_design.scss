@@ -44,3 +44,35 @@
     color: var.$clr-black;
     margin-top: 0;
 }
+
+@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-laptop}) {
+    
+    .design {
+        margin-top: 100px;
+        
+        h2 {
+            max-width: 267px;
+            font-size: var.$fs-24;
+        }
+        a {
+            font-size: var.$fs-18;
+            display: block;
+            margin-top: 35px;
+        }
+    }
+    
+    .design__grid {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        row-gap: 36px;
+        margin-top: 48px;
+    }
+    
+    .design--type {
+        font-size: var.$fs-12;
+    }
+    
+    .design--name {
+        font-size: var.$fs-18;
+    }
+}

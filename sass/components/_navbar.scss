@@ -14,5 +14,20 @@
     nav {
         display: flex;
         gap: 50px;
+        
+    }
+    
+}
+
+@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-tablet}) {
+    
+    .topbar {
+        margin-block: 13px 48px;
+        
+        nav {
+            display: none;
+            
+        }
+        
     }
 }
