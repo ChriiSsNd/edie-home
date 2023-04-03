@@ -9,33 +9,16 @@
     h2 {
         max-width: 346px;
     }
+
+    .block {
+        width: 100%;
+    }
 }
 
-.services__flow {
+.flow {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     margin-top: 42px;   
-}
-
-.card {
-    padding: 46px 34px;
-
-    h3 {
-        font-weight: var.$fw-700;
-    }
-
-    p {
-        margin: {
-            top: 24px;
-            bottom: 30px;
-        };
-    }
-}
-
-button {
-    @extend %btn;
-    background-color: var.$clr-white-gray;
-    color: var.$clr-gray;
 }
 
 .icon--bg-bleu{
@@ -50,12 +33,6 @@ button {
     background-color: var.$clr-red;
 }
 
-.card--bg {
-    background-color: var.$clr-white;
-    border-radius: 24px;
-    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
-}
-
 .btn--bg {
     background-color: var.$clr-blue;
     color: var.$clr-white;
@@ -64,32 +41,24 @@ button {
 @media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-laptop}) {
     
     .services {
-        margin-top: 102px;
-
+        margin: auto {
+            top: 102px;
+        };
+    
         h2 {
             max-width: 259px;
             font-size: var.$fs-24;
         }
+        .block {
+            width: 78vw;
+        }
     }
-
-    .services__flow {
+    
+    .flow {
+        display: flex;
         flex-direction: column;
-        gap: 62px;
+        align-items: center;
+        gap: 72px;
         margin-top: 46px;   
-    }
-
-    .card {
-        padding: 46px 34px;
-
-        h3 {
-            font-weight: var.$fw-700;
-        }
-
-        p {
-            margin: {
-                top: 24px;
-                bottom: 30px;
-            };
-        }
     }
 }

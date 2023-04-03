@@ -3,31 +3,45 @@
 .topbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-block: 42px 96px;
-
+    
+    nav {
+        display: flex;
+        gap: 48px;
+        
+    }
+    
     a {
         color: var.$clr-black;
         font-size: var.$fs-24;
         font-weight: var.$fw-500;
     }
     
-    nav {
-        display: flex;
-        gap: 50px;
-        
-    }
-    
 }
 
-@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-tablet}) {
+#burger-menu {
+    display: none;
+    background-color: transparent;
+    border: none;
+
+    i {
+        color: var.$clr-black;
+    }
+}
+
+@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-laptop}) {
     
     .topbar {
         margin-block: 13px 48px;
         
         nav {
             display: none;
-            
         }
-        
+    }
+
+    #burger-menu {
+        display: block;
     }
 }
+

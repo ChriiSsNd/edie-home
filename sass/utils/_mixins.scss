@@ -3,8 +3,3 @@
     background-color: $bg-color;
     color: $color;
 }
-
-@mixin block-center($lg, $md) {
-    width: calc(100% - ($lg - $md) * 2);
-    margin: auto;
-}

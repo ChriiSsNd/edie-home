@@ -5,30 +5,26 @@ footer {
     background-color: var.$clr-dark-blue;
     color: var.$clr-whitish;
     margin-top: 233px;
-    padding-block: 46px 24px;
+    padding-block: 46px 24px;    
+}
 
-    &>div {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        @include m.block-center(165px, 0px);
-    }
+.footer__flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 
-    a {
-        font-size: var.$fs-18;
-        color: var.$clr-white;
-    }
-
-    .email {
-        margin-top: 0;
-    }
-
-    &>p {
+    &~p {
         margin-block: 118px 0;
         text-align: center;
 
         a {
             font-weight: var.$fw-700;
+            color: inherit;
+        }
+    }
+    .email {
+        &>p {
+            margin-top: 0;
         }
     }
 }
@@ -37,6 +33,11 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    a {
+        font-size: var.$fs-18;
+        color: var.$clr-white;
+    }
 }
 
 .social {
@@ -51,28 +52,28 @@ footer {
     margin-top: 10px;
 }
 
-@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-laptop}) {
+@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-tablet}) {
     
     footer {
-        margin-top: 103px;
-    
-        &>div {
-            display: block;
-            @include m.block-center(41px, 0px);
+        margin-top: 100px;
+        padding-block: 36px 24px;   
+        
+        .container {
+            width: 50vw;
+            margin: auto;
         }
-
-        .social {
-            p {
-                margin-top: 64px;
-            }
-        }
+    }
     
-        .email {
-            margin-top: 65px;
-        }
+    .footer__flow {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 65px;
     
-        &>p {
-            margin-top: 154px;
+        &~p {
+            margin-block: 152px 0;
+            font-size: var.$fs-14;
         }
     }
 }

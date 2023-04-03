@@ -3,11 +3,14 @@
 
 .heading {
     max-width: 543px;
-    @extend %heading;
 
     p {
         font-weight: var.$fw-500;
         color: var.$clr-blue;
+    }
+
+    h1 {
+        margin-top: 0;
     }
 }
 
@@ -16,40 +19,43 @@ img {
     height: auto;
 }
 
-header {
-    .hero-image {
-        border-radius: 18px;
-    }
+.hero {
+    border-radius: 18px;
 }
 
 .heading-str {
     max-width: 366px;
-    @extend %heading;
 }
 
-@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-laptop}) {
-
-    h1 {
-        font-size: var.$fs-18;
+.str--text {
+    font-size: var.$fs-14;
+    font-weight: var.$fw-500;
+    color: var.$clr-gray;
+    margin: {
+        top: 42px;
+        bottom: 9px;
     }
+}
 
+@media only screen and (min-width: #{var.$bp-mobile}) and (max-width: #{var.$bp-tablet}) {
+
+    header {
+        h1 {
+            font-size: var.$fs-18;
+        }
+    }
+    
     .heading {
         max-width: 200px;
-        margin-left: 30px;
-    
+        
         p {
             font-size: var.$fs-12;
             margin-bottom: 0; 
         }
-
-        h1 {
-            margin-top: 0;
-        }
     }
     
     .heading-str {
-        max-width: 261px;
-        margin-left: 30px;
+        max-width: 275px;
 
         h1 {
             max-width: 150px;
@@ -57,7 +63,13 @@ header {
 
         p {
             font-size: var.$fs-12;
-            max-width: 275px;
+        }
+    }
+    .str--text {
+        font-size: var.$fs-10;
+        margin: {
+            top: 31px; 
+            bottom: 5px;
         }
     }
 }
